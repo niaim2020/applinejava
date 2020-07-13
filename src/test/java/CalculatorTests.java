@@ -24,6 +24,12 @@ public class CalculatorTests {
         Assert.assertEquals(11.95f, operation.division(35.85f,3f), 0.0001);
     }
 
+    @Test(expected = ArithmeticException.class)
+    public void testArithmeticException() {
+        Operations operation = new Operations();
+        operation.division(66,0);
+    }
+
     @Test
     public void testMultiplication() {
         Operations operation = new Operations();
