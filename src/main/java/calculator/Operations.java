@@ -15,7 +15,7 @@ public class Operations {
 
     public float division(float firstNum, float secondNum) {
         if (secondNum == 0) {
-            throw new ArithmeticException("Деление на 0 невозможно");
+            throw new ArithmeticException();
         }
         return firstNum / secondNum;
     }
